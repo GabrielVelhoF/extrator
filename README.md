@@ -16,6 +16,45 @@
         <div id="resultado-palavrachave"></div>
     </div>
     <script src="script.js"></script>
+   
+function processa Texto (Trabalho) {
+    let palavras = texto.split(/\P{L}+/u);
+    
+    let frequencias = [];
+    for(let i in palavras) {
+        frequencias [i] = 0;
+        for (let jin palavras) {
+            if (palavras[i]==palavras[j]){
+                frequencias[i]++;
+            }
+        }
+    }
+    console.log(frequencias);
+    
+    return palavras;
+}
+}
+
+function contaVendas(listaVendas) { 
+  let produtos = listaVendas.split(/\P{L}+/u); 
+  let contagem = {}; 
+
+  for (let i of produtos) { 
+    contagem[i] = 0; 
+    for (let j of produtos) { 
+      if (i == j) { 
+        contagem[i]++; 
+      } 
+    } 
+  } 
+  console.log(contagem); 
+  return contagem; 
+}
 </body>
 
+const texto = "Programar é divertido!"; 
+
+const vogais = texto.match(/[aeiou]/gi); 
+
+console.log(vogais); 
 </html>
