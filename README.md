@@ -50,6 +50,16 @@ function contaVendas(listaVendas) {
   console.log(contagem); 
   return contagem; 
 }
+function tiraPalavrasRuins(palavras) {
+    const PALAVRAS_RUINS = ["para", "uma", "nós"];
+    const palavrasBoas = [];
+    for (let palavra of palavras){
+        if (!PALAVRAS_RUINS.has(palavra) && palavra.length > 2) {
+    palavrasBoas.push(palavra);
+        }
+    }
+return palavrasBoas;
+}
 </body>
 
 const texto = "Programar é divertido!"; 
