@@ -60,6 +60,13 @@ function tiraPalavrasRuins(palavras) {
     }
 return palavrasBoas;
 }
+export const PALAVRAS_RUINS = new Set([
+    "que",
+    "para",
+    "com",
+    "não",
+    // Trecho de código suprimido
+]);
 </body>
 
 const texto = "Programar é divertido!"; 
